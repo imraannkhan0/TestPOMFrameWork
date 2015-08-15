@@ -21,14 +21,14 @@ public class WebPage {
 
 	protected static WebDriver webDriver;
 
-
-	public static WebDriver getDriver(){
-		return webDriver;
-	}
 	
 	public void openBrowser(){
 		webDriver=new FirefoxDriver();
-		webDriver.navigate().to("http//:www.gmail.com");
+		webDriver.navigate().to("https://accounts.google.com");
+	}
+	
+	public static WebDriver getDriver(){
+		return webDriver;
 	}
 	
 	public void waitForSometime(int waitingTimer){

@@ -12,11 +12,7 @@ import com.google.common.base.Function;
 
 public class BasePage extends WebPage {
 	
-	public void openBrowser(){
-		webDriver=new FirefoxDriver();
-		webDriver.navigate().to("http//:www.gmail.com");
-	}
-
+	
 	
 	public void scrollPageBy(int x, int y)
 	{
