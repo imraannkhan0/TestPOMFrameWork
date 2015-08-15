@@ -171,5 +171,15 @@ public class WebPage {
 				});
 	}
 	
+	
+	public static void endTest()
+	{		
+		if (null != webDriver)
+		{
+			webDriver.close();
+			webDriver = null;
+		}
+	}
+
 
 }

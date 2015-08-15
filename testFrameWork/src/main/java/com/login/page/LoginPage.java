@@ -19,9 +19,8 @@ public class LoginPage extends BasePage {
 		loginPageElements.clickOnNextBtn();
 		waitForSometime(50);
 		loginPageElements.enterPassword(passw);
-		waitForSometime(50);
+		waitForSometime(20);
 		loginPageElements.clickOnSignBtn();
-		waitForSometime(50);
 		textMsg = loginPageElements.getLoginErrorMsg();
 		return textMsg;
 	}
