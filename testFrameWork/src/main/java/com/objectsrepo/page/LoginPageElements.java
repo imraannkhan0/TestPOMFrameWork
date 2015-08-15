@@ -13,23 +13,23 @@ public class LoginPageElements {
 		this.driver = driver;
 	} 
 
-	@FindBy(how=How.ID,id="Email")
+	@FindBy(how=How.ID,using="Email")
 	@CacheLookup
 	private WebElement login_emailEditBox;
 
-	@FindBy(how=How.ID,id="Passwd")
+	@FindBy(how=How.ID,using="Passwd")
 	@CacheLookup
 	private WebElement login_passwEditBox;
 
-	@FindBy(how=How.ID,id="next")
+	@FindBy(how=How.ID,using="next")
 	@CacheLookup
 	private WebElement login_nextBtn;
 
-	@FindBy(how=How.ID,id="signIn")
+	@FindBy(how=How.ID,using="signIn")
 	@CacheLookup
 	private WebElement login_signInBtn;
 
-	@FindBy(how=How.ID,id="errormsg_0_Passwd")
+	@FindBy(how=How.ID,using="errormsg_0_Passwd")
 	@CacheLookup
 	private WebElement login_errorTest;
 

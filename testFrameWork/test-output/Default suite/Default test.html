@@ -57,9 +57,9 @@ function toggleAllBoxes() {
 <tr>
 <td>Tests passed/Failed/Skipped:</td><td>0/1/0</td>
 </tr><tr>
-<td>Started on:</td><td>Sun Aug 16 04:16:23 IST 2015</td>
+<td>Started on:</td><td>Sun Aug 16 04:28:04 IST 2015</td>
 </tr>
-<tr><td>Total time:</td><td>59 seconds (59287 ms)</td>
+<tr><td>Total time:</td><td>35 seconds (35083 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -76,13 +76,13 @@ function toggleAllBoxes() {
 </tr>
 <tr>
 <td title='com.login.test.LoginPageTest.verifyLoginErrorMessage()'><b>verifyLoginErrorMessage</b><br>Test class: com.login.test.LoginPageTest</td>
-<td><div><pre>org.openqa.selenium.NoSuchElementException: Unable to locate element: {&quot;method&quot;:&quot;id&quot;,&quot;selector&quot;:&quot;Passwd&quot;}
-Command duration or timeout: 50.11 seconds
+<td><div><pre>org.openqa.selenium.NoSuchElementException: Unable to locate element: {&quot;method&quot;:&quot;id&quot;,&quot;selector&quot;:&quot;errormsg_0_Passwd&quot;}
+Command duration or timeout: 25.35 seconds
 For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
 Build info: version: &apos;2.47.1&apos;, revision: &apos;unknown&apos;, time: &apos;2015-07-30 11:02:44&apos;
 System info: host: &apos;SATYA-PC&apos;, ip: &apos;192.168.189.1&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.7.0&apos;
-*** Element info: {Using=id, value=Passwd}
-Session ID: a5449ca2-6807-4477-bb56-ed0d6411bc93
+*** Element info: {Using=id, value=errormsg_0_Passwd}
+Session ID: 0b2ca6b7-52e9-4bb5-a5fe-df061c982cb2
 Driver info: org.openqa.selenium.firefox.FirefoxDriver
 Capabilities [{platform=WINDOWS, acceptSslCerts=true, javascriptEnabled=true, browserName=firefox, rotatable=false, locationContextEnabled=true, version=31.0, cssSelectorsEnabled=true, databaseEnabled=true, handlesAlerts=true, nativeEvents=true, webStorageEnabled=true, applicationCacheEnabled=true, takesScreenshot=true}]
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
@@ -98,9 +98,9 @@ Capabilities [{platform=WINDOWS, acceptSslCerts=true, javascriptEnabled=true, br
 	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:340)
 	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
 	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-	at $Proxy9.clear(Unknown Source)
-	at com.objectsrepo.page.LoginPageElements.enterPassword(LoginPageElements.java:59)
-	at com.login.page.LoginPage.getLoginToApp(LoginPage.java:21)
+	at $Proxy9.getText(Unknown Source)
+	at com.objectsrepo.page.LoginPageElements.getLoginErrorMsg(LoginPageElements.java:72)
+	at com.login.page.LoginPage.getLoginToApp(LoginPage.java:24)
 	at com.login.test.LoginPageTest.verifyLoginErrorMessage(LoginPageTest.java:24)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
@@ -126,21 +126,21 @@ Capabilities [{platform=WINDOWS, acceptSslCerts=true, javascriptEnabled=true, br
 	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:111)
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:204)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:175)
-Caused by: org.openqa.selenium.NoSuchElementException: Unable to locate element: {&quot;method&quot;:&quot;id&quot;,&quot;selector&quot;:&quot;Passwd&quot;}
+Caused by: org.openqa.selenium.NoSuchElementException: Unable to locate element: {&quot;method&quot;:&quot;id&quot;,&quot;selector&quot;:&quot;errormsg_0_Passwd&quot;}
 For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
 Build info: version: &apos;2.47.1&apos;, revision: &apos;unknown&apos;, time: &apos;2015-07-30 11:02:44&apos;
 System info: host: &apos;SATYA-PC&apos;, ip: &apos;192.168.189.1&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.7.0&apos;
 Driver info: driver.version: unknown
-	at &lt;anonymous class&gt;.FirefoxDriver.prototype.findElementInternal_(file:///C:/Users/SATYA/AppData/Local/Temp/anonymous5887296313206610619webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:10667)
-	at &lt;anonymous class&gt;.fxdriver.Timer.prototype.setTimeout/&lt;.notify(file:///C:/Users/SATYA/AppData/Local/Temp/anonymous5887296313206610619webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:623)
-</pre></div><a href='#' onClick='toggleBox("stack-trace113776839", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace113776839'><pre>org.openqa.selenium.NoSuchElementException: Unable to locate element: {&quot;method&quot;:&quot;id&quot;,&quot;selector&quot;:&quot;Passwd&quot;}
-Command duration or timeout: 50.11 seconds
+	at &lt;anonymous class&gt;.FirefoxDriver.prototype.findElementInternal_(file:///C:/Users/SATYA/AppData/Local/Temp/anonymous2468492974337887713webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:10667)
+	at &lt;anonymous class&gt;.fxdriver.Timer.prototype.setTimeout/&lt;.notify(file:///C:/Users/SATYA/AppData/Local/Temp/anonymous2468492974337887713webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:623)
+</pre></div><a href='#' onClick='toggleBox("stack-trace1275406235", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1275406235'><pre>org.openqa.selenium.NoSuchElementException: Unable to locate element: {&quot;method&quot;:&quot;id&quot;,&quot;selector&quot;:&quot;errormsg_0_Passwd&quot;}
+Command duration or timeout: 25.35 seconds
 For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
 Build info: version: &apos;2.47.1&apos;, revision: &apos;unknown&apos;, time: &apos;2015-07-30 11:02:44&apos;
 System info: host: &apos;SATYA-PC&apos;, ip: &apos;192.168.189.1&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.7.0&apos;
-*** Element info: {Using=id, value=Passwd}
-Session ID: a5449ca2-6807-4477-bb56-ed0d6411bc93
+*** Element info: {Using=id, value=errormsg_0_Passwd}
+Session ID: 0b2ca6b7-52e9-4bb5-a5fe-df061c982cb2
 Driver info: org.openqa.selenium.firefox.FirefoxDriver
 Capabilities [{platform=WINDOWS, acceptSslCerts=true, javascriptEnabled=true, browserName=firefox, rotatable=false, locationContextEnabled=true, version=31.0, cssSelectorsEnabled=true, databaseEnabled=true, handlesAlerts=true, nativeEvents=true, webStorageEnabled=true, applicationCacheEnabled=true, takesScreenshot=true}]
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
@@ -156,9 +156,9 @@ Capabilities [{platform=WINDOWS, acceptSslCerts=true, javascriptEnabled=true, br
 	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:340)
 	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
 	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-	at $Proxy9.clear(Unknown Source)
-	at com.objectsrepo.page.LoginPageElements.enterPassword(LoginPageElements.java:59)
-	at com.login.page.LoginPage.getLoginToApp(LoginPage.java:21)
+	at $Proxy9.getText(Unknown Source)
+	at com.objectsrepo.page.LoginPageElements.getLoginErrorMsg(LoginPageElements.java:72)
+	at com.login.page.LoginPage.getLoginToApp(LoginPage.java:24)
 	at com.login.test.LoginPageTest.verifyLoginErrorMessage(LoginPageTest.java:24)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
@@ -184,16 +184,16 @@ Capabilities [{platform=WINDOWS, acceptSslCerts=true, javascriptEnabled=true, br
 	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:111)
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:204)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:175)
-Caused by: org.openqa.selenium.NoSuchElementException: Unable to locate element: {&quot;method&quot;:&quot;id&quot;,&quot;selector&quot;:&quot;Passwd&quot;}
+Caused by: org.openqa.selenium.NoSuchElementException: Unable to locate element: {&quot;method&quot;:&quot;id&quot;,&quot;selector&quot;:&quot;errormsg_0_Passwd&quot;}
 For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
 Build info: version: &apos;2.47.1&apos;, revision: &apos;unknown&apos;, time: &apos;2015-07-30 11:02:44&apos;
 System info: host: &apos;SATYA-PC&apos;, ip: &apos;192.168.189.1&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.7.0&apos;
 Driver info: driver.version: unknown
-	at &lt;anonymous class&gt;.FirefoxDriver.prototype.findElementInternal_(file:///C:/Users/SATYA/AppData/Local/Temp/anonymous5887296313206610619webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:10667)
-	at &lt;anonymous class&gt;.fxdriver.Timer.prototype.setTimeout/&lt;.notify(file:///C:/Users/SATYA/AppData/Local/Temp/anonymous5887296313206610619webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:623)
+	at &lt;anonymous class&gt;.FirefoxDriver.prototype.findElementInternal_(file:///C:/Users/SATYA/AppData/Local/Temp/anonymous2468492974337887713webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:10667)
+	at &lt;anonymous class&gt;.fxdriver.Timer.prototype.setTimeout/&lt;.notify(file:///C:/Users/SATYA/AppData/Local/Temp/anonymous2468492974337887713webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:623)
 </pre></div></td>
-<td>50</td>
-<td>com.login.test.LoginPageTest@2083fc73</td></tr>
+<td>27</td>
+<td>com.login.test.LoginPageTest@349955ab</td></tr>
 </table><p>
 </body>
 </html>

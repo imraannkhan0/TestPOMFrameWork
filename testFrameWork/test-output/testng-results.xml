@@ -2,36 +2,36 @@
 <testng-results skipped="0" failed="1" total="1" passed="0">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="59287" started-at="2015-08-15T22:46:23Z" finished-at="2015-08-15T22:47:22Z">
+  <suite name="Default suite" duration-ms="35083" started-at="2015-08-15T22:58:04Z" finished-at="2015-08-15T22:58:39Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="59287" started-at="2015-08-15T22:46:23Z" finished-at="2015-08-15T22:47:22Z">
+    <test name="Default test" duration-ms="35083" started-at="2015-08-15T22:58:04Z" finished-at="2015-08-15T22:58:39Z">
       <class name="com.login.test.LoginPageTest">
-        <test-method status="PASS" signature="configuartion()[pri:0, instance:com.login.test.LoginPageTest@2083fc73]" name="configuartion" is-config="true" duration-ms="8505" started-at="2015-08-16T04:16:23Z" finished-at="2015-08-16T04:16:31Z">
+        <test-method status="PASS" signature="configuartion()[pri:0, instance:com.login.test.LoginPageTest@349955ab]" name="configuartion" is-config="true" duration-ms="7748" started-at="2015-08-16T04:28:04Z" finished-at="2015-08-16T04:28:12Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- configuartion -->
-        <test-method status="FAIL" signature="verifyLoginErrorMessage()[pri:0, instance:com.login.test.LoginPageTest@2083fc73]" name="verifyLoginErrorMessage" duration-ms="50745" started-at="2015-08-16T04:16:31Z" finished-at="2015-08-16T04:17:22Z">
+        <test-method status="FAIL" signature="verifyLoginErrorMessage()[pri:0, instance:com.login.test.LoginPageTest@349955ab]" name="verifyLoginErrorMessage" duration-ms="27306" started-at="2015-08-16T04:28:12Z" finished-at="2015-08-16T04:28:39Z">
           <exception class="org.openqa.selenium.NoSuchElementException">
             <message>
-              <![CDATA[Unable to locate element: {"method":"id","selector":"Passwd"}
-Command duration or timeout: 50.11 seconds
+              <![CDATA[Unable to locate element: {"method":"id","selector":"errormsg_0_Passwd"}
+Command duration or timeout: 25.35 seconds
 For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
 Build info: version: '2.47.1', revision: 'unknown', time: '2015-07-30 11:02:44'
 System info: host: 'SATYA-PC', ip: '192.168.189.1', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.7.0'
-*** Element info: {Using=id, value=Passwd}
-Session ID: a5449ca2-6807-4477-bb56-ed0d6411bc93
+*** Element info: {Using=id, value=errormsg_0_Passwd}
+Session ID: 0b2ca6b7-52e9-4bb5-a5fe-df061c982cb2
 Driver info: org.openqa.selenium.firefox.FirefoxDriver
 Capabilities [{platform=WINDOWS, acceptSslCerts=true, javascriptEnabled=true, browserName=firefox, rotatable=false, locationContextEnabled=true, version=31.0, cssSelectorsEnabled=true, databaseEnabled=true, handlesAlerts=true, nativeEvents=true, webStorageEnabled=true, applicationCacheEnabled=true, takesScreenshot=true}]]]>
             </message>
             <full-stacktrace>
-              <![CDATA[org.openqa.selenium.NoSuchElementException: Unable to locate element: {"method":"id","selector":"Passwd"}
-Command duration or timeout: 50.11 seconds
+              <![CDATA[org.openqa.selenium.NoSuchElementException: Unable to locate element: {"method":"id","selector":"errormsg_0_Passwd"}
+Command duration or timeout: 25.35 seconds
 For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
 Build info: version: '2.47.1', revision: 'unknown', time: '2015-07-30 11:02:44'
 System info: host: 'SATYA-PC', ip: '192.168.189.1', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.7.0'
-*** Element info: {Using=id, value=Passwd}
-Session ID: a5449ca2-6807-4477-bb56-ed0d6411bc93
+*** Element info: {Using=id, value=errormsg_0_Passwd}
+Session ID: 0b2ca6b7-52e9-4bb5-a5fe-df061c982cb2
 Driver info: org.openqa.selenium.firefox.FirefoxDriver
 Capabilities [{platform=WINDOWS, acceptSslCerts=true, javascriptEnabled=true, browserName=firefox, rotatable=false, locationContextEnabled=true, version=31.0, cssSelectorsEnabled=true, databaseEnabled=true, handlesAlerts=true, nativeEvents=true, webStorageEnabled=true, applicationCacheEnabled=true, takesScreenshot=true}]
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
@@ -47,9 +47,9 @@ Capabilities [{platform=WINDOWS, acceptSslCerts=true, javascriptEnabled=true, br
 	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:340)
 	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
 	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-	at $Proxy9.clear(Unknown Source)
-	at com.objectsrepo.page.LoginPageElements.enterPassword(LoginPageElements.java:59)
-	at com.login.page.LoginPage.getLoginToApp(LoginPage.java:21)
+	at $Proxy9.getText(Unknown Source)
+	at com.objectsrepo.page.LoginPageElements.getLoginErrorMsg(LoginPageElements.java:72)
+	at com.login.page.LoginPage.getLoginToApp(LoginPage.java:24)
 	at com.login.test.LoginPageTest.verifyLoginErrorMessage(LoginPageTest.java:24)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
@@ -75,20 +75,20 @@ Capabilities [{platform=WINDOWS, acceptSslCerts=true, javascriptEnabled=true, br
 	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:111)
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:204)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:175)
-Caused by: org.openqa.selenium.NoSuchElementException: Unable to locate element: {"method":"id","selector":"Passwd"}
+Caused by: org.openqa.selenium.NoSuchElementException: Unable to locate element: {"method":"id","selector":"errormsg_0_Passwd"}
 For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
 Build info: version: '2.47.1', revision: 'unknown', time: '2015-07-30 11:02:44'
 System info: host: 'SATYA-PC', ip: '192.168.189.1', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.7.0'
 Driver info: driver.version: unknown
-	at <anonymous class>.FirefoxDriver.prototype.findElementInternal_(file:///C:/Users/SATYA/AppData/Local/Temp/anonymous5887296313206610619webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:10667)
-	at <anonymous class>.fxdriver.Timer.prototype.setTimeout/<.notify(file:///C:/Users/SATYA/AppData/Local/Temp/anonymous5887296313206610619webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:623)
+	at <anonymous class>.FirefoxDriver.prototype.findElementInternal_(file:///C:/Users/SATYA/AppData/Local/Temp/anonymous2468492974337887713webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:10667)
+	at <anonymous class>.fxdriver.Timer.prototype.setTimeout/<.notify(file:///C:/Users/SATYA/AppData/Local/Temp/anonymous2468492974337887713webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:623)
 ]]>
             </full-stacktrace>
           </exception> <!-- org.openqa.selenium.NoSuchElementException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyLoginErrorMessage -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.login.test.LoginPageTest@2083fc73]" name="tearDown" is-config="true" duration-ms="14" started-at="2015-08-16T04:17:22Z" finished-at="2015-08-16T04:17:22Z">
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.login.test.LoginPageTest@349955ab]" name="tearDown" is-config="true" duration-ms="11" started-at="2015-08-16T04:28:39Z" finished-at="2015-08-16T04:28:39Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
