@@ -3,7 +3,9 @@ package com.commonutility.page;
 import java.util.concurrent.TimeUnit;
 
 import org.openqa.selenium.By;
+import org.openqa.selenium.TimeoutException;
 import org.openqa.selenium.WebDriverException;
+import org.openqa.selenium.WebElement;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.ui.FluentWait;
@@ -47,5 +49,17 @@ public class BasePage extends WebPage {
 			}
 				});
 	}
+	
+	
+	public void hoverOverElemets(WebElement hoverElelemtLocator)
+	{
+		try
+		{
+			new Actions(getDriver()).moveToElement(hoverElelemtLocator).pause(500).perform();
+		} catch (TimeoutException e)
+		{
 
+		}
+	}
+	
 }
